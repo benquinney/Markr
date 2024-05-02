@@ -18,6 +18,11 @@ I have not calculated the standard deviation as I have forgotten how to do it of
 ### No HTTP errors
 The output of the results is also not exactly as you had asked because I put some extra data in the json response for indicating whether or not the import or result was successful while leaving the standard 200 type response showing that the endpoint itself was reached. Again, I know this is not what was asked, but I have just omitted it due to time
 
+### Very rudementary automated tests
+I have not set up PHPUnit to run automated tests so instead I have created some very rudementary tests to check the results expected:
+1. Run the test import: curl "http://localhost:80/import/test.php"
+2. Run the test results: curl "http://localhost:80/results/?test_id=1234&action=test"
+
 ### Example import with more than one result for the student
 curl -X POST -H 'Content-Type: text/xml+markr' http://localhost:80/import/ -d @- <<XML
     <mcq-test-results>
