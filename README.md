@@ -47,3 +47,9 @@ XML
 
 ### Example results
 curl "http://localhost:80/results/?test_id=1234&action=aggregate"
+
+### Test import
+curl "http://localhost:80/import/test.php"
+
+### Test results
+curl "http://localhost:80/results/?test_id=1234&action=test"
