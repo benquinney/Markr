@@ -23,6 +23,9 @@ I have not set up PHPUnit to run automated tests so instead I have created some 
 1. Run the test import: curl "http://localhost:80/import/test.php"
 2. Run the test results: curl "http://localhost:80/results/?test_id=1234&action=test"
 
+### No rejection for missing items
+I have also not added any checking for if parts of the XML are missing sorry!!
+
 ### Example import with more than one result for the student
 ```
 curl -X POST -H 'Content-Type: text/xml+markr' http://localhost:80/import/ -d @- <<XML
