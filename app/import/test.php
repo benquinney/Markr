@@ -7,22 +7,27 @@ $test_data = array(
     array(
         "student_number" => 1111,
         "marks_obtained" => 10,
+        "marks_available" => 20,
     ),
     array(
         "student_number" => 2222,
         "marks_obtained" => 12,
+        "marks_available" => 20,
     ),
     array(
         "student_number" => 3333,
         "marks_obtained" => 14,
+        "marks_available" => 20,
     ),
     array(
         "student_number" => 4444,
         "marks_obtained" => 16,
+        "marks_available" => 20,
     ),
     array(
         "student_number" => 2222,
         "marks_obtained" => 18,
+        "marks_available" => 20,
     ),
 );
 
@@ -32,6 +37,7 @@ foreach($test_data as $sd)
         "student_number" => $sd['student_number'],
         "test_id" => $test_id,
         "marks_obtained" => $sd['marks_obtained'],
+        "marks_available" => $sd['marks_available'],
     );
 
     if(empty($students[$sd['student_number']]))
