@@ -59,7 +59,10 @@ curl "http://localhost:80/results/?test_id=1234&action=aggregate"
 
 ### Test import
 ```
-curl "http://localhost:80/import/test.php"
+curl -X POST -H 'Content-Type: text/xml+markr' 'http://localhost:80/import/?action=test' -d @- <<XML
+    <mcq-test-results>
+    </mcq-test-results>
+XML
 ```
 
 ### Test results
