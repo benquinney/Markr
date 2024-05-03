@@ -20,8 +20,8 @@ The output of the results is also not exactly as you had asked because I put som
 
 ### Very rudementary automated tests
 I have not set up PHPUnit to run automated tests so instead I have created some very rudementary tests to check the results expected:
-1. Run the test import: curl "http://localhost:80/import/test.php"
-2. Run the test results: curl "http://localhost:80/results/?test_id=1234&action=test"
+1. Run the test import command below
+2. Run the test results command below
 
 ### Example import with more than one result for the student
 ```
@@ -59,7 +59,10 @@ curl "http://localhost:80/results/?test_id=1234&action=aggregate"
 
 ### Test import
 ```
-curl "http://localhost:80/import/test.php"
+curl -X POST -H 'Content-Type: text/xml+markr' 'http://localhost:80/import/?action=test' -d @- <<XML
+    <mcq-test-results>
+    </mcq-test-results>
+XML
 ```
 
 ### Test results
