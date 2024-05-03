@@ -1,7 +1,7 @@
-### Thoughts explanations and apologies
+### Thoughts, explanations and apologies
 I am very sorry that this code does not complete 100% of the challenge - honestly I overestimated how much time I would be able to commit to it between my interview yesterday afternoon and 12pm today. Between family duties last night and taking my daughter to school today I have simply run out of time.
 
-I have thrown the example together in PHP as that is what I am most familiar with and I thought I would be able to get the most done in limited time.
+I have thrown the example together in vanilla PHP as I am really not the best at setting up platforms and infrastructure and I didn't want to waste time doing that when I felt like I could achieve the essence of what you were wanting without any extra libraries.
 
 The routes are not exactly as you had them in your example - you will notice that there are a / at the end so that they hit the index.php file in that directory
 
